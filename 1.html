@@ -11,6 +11,9 @@
       color:black;
       text-decoration: none;
     }
+    .underline_a{
+      text-decoration:underline;
+    }
     #active{
       color:skyblue;
     }
@@ -31,6 +34,11 @@
       padding:20px;
       width:100px;
     }
+    #grid{
+      display:grid;
+      grid-template-columns:200px 1fr;
+    }
+
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124724688-1"></script>
@@ -45,23 +53,25 @@
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw" id="active">HTML</a></li>
-    <li><a href="2.html" class="saw">CSS</a></li>
-    <li><a href="3.html" class="saw">JavaScript</a></li>
-  </ol>
-  <h2>HTML</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fGIE6WCJN78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </p>
-  <p>
-    <a href="https://www.w3.org/TR/html51/textlevel-semantics.html#the-a-element" target="_blanck" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web application.
-  </p>
-  <p>
-    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
-  </p>
-
-  <img src="html.png" height="450">
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw" id="active">HTML</a></li>
+      <li><a href="2.html" class="saw">CSS</a></li>
+      <li><a href="3.html" class="saw">JavaScript</a></li>
+    </ol>
+    <div>
+      <h2>HTML</h2>
+      <p>
+        <a href="https://www.w3.org/TR/html51/textlevel-semantics.html#the-a-element" target="_blanck" title="html5 specification" class="underline_a"><u>Hypertext Markup Language (HTML)</u></a> is the standard markup language for <strong>creating web pages</strong> and web application.
+      </p>
+      <p>
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+      </p>
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fGIE6WCJN78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </p>
+    </div>
+  </div>
 
   <p>
     <div id="disqus_thread"></div>
