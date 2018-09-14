@@ -19,21 +19,16 @@
   h3{
     font-weight:lighter;
   }
-  .welcome{
-    color:navy;
-    font-weight:lighter;
-  }
   h4{
-    color:yellowgreen;
+    color:gray;
     margin:0;
     margin-bottom:10px;
   }
-  #grid ol{
+  #grid .contents{
     border-right:2px solid gray;
-    margin-left:20px;
-    margin-top:0;
-    padding:20px;
-    width:100px;
+    margin:none;
+    padding:none;
+    width:150px;
   }
   #grid{
     display:grid;
@@ -43,7 +38,7 @@
     #grid{
       display:block;
     }
-    #grid ol{
+    #grid .contents{
       border-right:none;
     }
     h1{
